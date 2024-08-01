@@ -16,8 +16,8 @@ Car Rental is a web application that allows users to easily and quickly rent veh
 
 1.(Car Information ) https://car-rental-five-psi.vercel.app/
 
-2. (For Pictures) https://cdn.imagin.studio/getimage
+2.(For Pictures) https://cdn.imagin.studio/getimage
 
 ### GIF
 
- <img src=""/>
+ <img src="./public/car-rental.gif"/>
