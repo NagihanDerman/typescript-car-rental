@@ -11,7 +11,7 @@ import { useSearchParams } from "react-router-dom";
 import { fuels, years } from "../utils/constants";
 
 const Home = () => {
-  // bu statei tanımlarken generic yardımı ile sadece CarType[] veya null değere sahip olabilceğini söyledik
+  // bu statei tanımlarken generic yardımı ile sadece CarType[] veya null değere sahip olabilir
   const [cars, setCars] = useState<CarType[] | null>(null);
 
   // bu state sadece boolean değerler alabilir

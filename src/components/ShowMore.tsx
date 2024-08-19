@@ -3,15 +3,6 @@ import Button from "./Button";
 
 const ShowMore = () => {
   const [params, setParams] = useSearchParams();
-  /*
-    * 1) URL'de limit parametresi yoksa:
-    * projeye yeni giris yapilmistir ve 5 arac default olarak ekranda gosterilir
-    * Butona tıklanınca url param eklenmeli ve değeri 10 olmalı
-
-    * 2) URL'de limit parametresi varsa:
-    * Kullanıcı en az 1 kere butona basmıştır
-    * Mevcut limitin üzerine 5 ekle
-    */
 
   // urldeki limit parametresini alma (param. yoksa 5)
   const limit = Number(params.get("limit")) || 5;

@@ -8,8 +8,6 @@ const options = {
   },
 };
 
-// Normal de bu fonksiyonumuz bir CarType dizisi return ediyor ama bu dizi api dan bir gecikme sonrasında geldiğinde dolayı return satırına sadece CarType[] yazmaıyoruz bu return deilen değeri Promise ismindeki interface'e generic tip olarak göndermeliyiz
-
 type FilterType = {
   make?: string;
   model?: string;
@@ -19,7 +17,7 @@ type FilterType = {
 };
 
 export const fetchCars = async (paramsObj: FilterType): Promise<CarType[]> => {
-  // parametreler gelmediği durumda geçerli olucak varsayılan değerlini belirle
+  // parametreler gelmediği durumda  varsayılan değerleri belirle
   const {
     limit = "5",
     make = "bmw",

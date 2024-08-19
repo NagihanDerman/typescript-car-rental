@@ -4,7 +4,7 @@ import { colors } from "./constants";
 const generateImage = (car: CarType, angle?: string): string => {
   const url = new URL("https://cdn.imagin.studio/getimage");
 
-  // aracın fotosunun oluşması şiçin gerekli paramları url'e ekle
+  // aracın fotosunun oluşması için gerekli paramları url'e ekle
   url.searchParams.append("customer", "hrjavascript-mastery");
   url.searchParams.append("make", car.make);
   url.searchParams.append("modelFamily", car.model.split("/")[0]);
